@@ -14,26 +14,54 @@ input {
   height: 30px;
   width: 70%;
 }
-
-span {
-    font-style:italic;
-}
-
-photo {
-    display: flex;
-    flex-direction: column;
-}
-
-img {
-    object-fit: cover;
-    overflow: hidden;
-}
-
+/*LEFT SIDE*/
 leftside {
     width: 40%;
     height: 100%;
 }
 
+photo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.desert {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.credit {
+  position: absolute;
+  bottom: 1px;
+  color: white;
+  font-size: 12px;
+}
+
+.cactus {
+  object-fit: contain;
+  width: 20%;
+  padding: 10px 0px;
+}
+
+logo {
+    display: flex;
+    justify-content: center;
+    background-color: #00000057;
+    position: absolute;
+    top: 120px;
+    height: 100px;
+    width: 100%;
+}
+
+.logoname {
+    color: white;
+    font-size: 80px;
+}
+
+/*RIGHT SIDE */
+
+/* HEADER */
 rightside {
     background-color: #d3d6db2b;
     border: 30px;
@@ -47,8 +75,13 @@ header {
     flex: 0, 1, auto;
     height: 33%;
     justify-content: center;
-    padding: 40px;
-    font-size: 22px;
+    padding: 0px 40px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+span {
+    font-style:italic;
 }
 
 header > div {
@@ -58,6 +91,8 @@ header > div {
 header > p {
   padding-top: 20px;
 }
+
+/* FORM */
 
 form {
     background-color: white;
@@ -76,6 +111,7 @@ form > div {
     width: 50%;
 }
 
+/* FOOTER */
 
 footer {
     position: relative;
@@ -85,7 +121,11 @@ footer {
     flex: 0, 1, auto
 }
 
+footer > div {
+  padding: 10px 0px;
+}
 #create {
+    background-color: #fbfbfb;
     width: 30%;
     flex-shrink: 0;
 }
