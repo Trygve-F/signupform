@@ -1,3 +1,4 @@
 # signupform
 
-image credit to Alex Azabache from Unsplash - thanks
+image credit: Alex Azabache from Unsplash
+font credit: Bones by Haunted House Fonts from dafont
