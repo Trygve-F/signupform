@@ -2,10 +2,26 @@ body {
     display: flex;
 }
 
+label, input {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  height: 30px;
+  width: 70%;
+}
+
+span {
+    font-style:italic;
+}
+
 photo {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 img {
@@ -19,23 +35,57 @@ leftside {
 }
 
 rightside {
+    background-color: #d3d6db2b;
+    border: 30px;
     display: flex;
     flex-direction: column;
 }
 
 header {
     display: flex;
-    height: 40%;
+    flex-direction: column;
+    flex: 0, 1, auto;
+    height: 33%;
     justify-content: center;
-    align-items: center;
+    padding: 40px;
+    font-size: 22px;
+}
+
+header > div {
+  width: 80%;
+}
+
+header > p {
+  padding-top: 20px;
 }
 
 form {
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    height: 30%;
+    flex-wrap: wrap;
+    flex: 1, 0, auto;
+    height: 33%;
+    padding-left: 40px;
 }
 
+.formheader {
+    width: 100%;
+}
+
+form > div {
+    width: 50%;
+}
+
+
 footer {
-    height: 30%;
+    position: relative;
+    top: 30px;
+    height: 33%;
+    padding-left: 40px;
+    flex: 0, 1, auto
+}
+
+#create {
+    width: 30%;
+    flex-shrink: 0;
 }
