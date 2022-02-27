@@ -1,3 +1,41 @@
-p {
-    color: blue;
+body {
+    display: flex;
+}
+
+photo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+leftside {
+    width: 40%;
+    height: 100%;
+}
+
+rightside {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+
+footer {
+    height: 30%;
 }
