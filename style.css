@@ -1,24 +1,56 @@
+
 @font-face {
     font-family: Bones;
     src: url(./fonts/BONEAPA.TTF);
 }
 
 body {
+    font-family:"times new roman", sans-serif;
     display: flex;
+}
+
+label {
+    text-indent: 4px;
 }
 
 label, input {
     display: block;
     font-family: inherit;
+    border-radius: 10px;
+    
     font-size: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
-input:focus {
-    outline: none;
-    border: 5px, solid, blue;
-    box-shadow: 2px 2px 5px black
+form input {
+    border: none;
+    background-color:#8080801a;
+    text-indent: 5px;
+    transition: box-shadow 0.1s linear;
+}
+
+form input:hover {
+    background-color: #fcfcfc;
+    box-shadow: 0px 0px 1px 2px #000000;
+}
+
+form input:valid {
+    background-color: #8080801a;
+}
+
+form input:hover:valid {
+    background-color: #fcfcfc;
+}
+
+form input:not(:placeholder-shown):invalid {
+    background-color: #ff00001c;
+}
+
+form input:focus {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px -1px #000000;
 }
 
 input {
@@ -143,6 +175,11 @@ footer > div {
     background: linear-gradient(90deg, rgba(241,219,209,1) 0%, rgba(255,255,255,1) 100%);
     width: 30%;
     flex-shrink: 0;
+}
+
+#create:hover {
+    box-shadow: 0px 0px 0px 1px black;
+    transition: box-shadow 0.1s linear;
 }
 
 #loginlink {
